@@ -22,6 +22,39 @@
 
     -->
     <script  src="js/index.js"></script>
-    <h1> Hello World! </h1>
+    <h1 id="title"> Abel and Simba Project</h1>
+    <p id="description"> 
+      Thank you for taking the time to help us improve the project.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <br>
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" validated required>
+      <br>
+      <label id="number-label">Age(optional)</label>
+      <input id="number" type="number" placeholder="Age" min="15" max="50">
+      <br>
+      <label id="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" default="Select current role">
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      <br>
+      <label id="radio">Would you recommend free code camp to a friend?</label> <br>
+      <input type="radio" id="definitely" name="definitely" value="definitely">
+      <label for="definitely">Definitely</label><br>
+      <input type="radio" id="may be" name="may be" value="may be">
+      <label for="may be">May be</label><br>
+      <input type="radio" id="not sure" name="not sure" value="not sure">
+      <label for="not sure">Not sure</label><br>
+      <button type="submit" id="submit">Submit</button>
+
+
+    </form>
   </body>
 </html>
